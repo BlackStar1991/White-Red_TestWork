@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]>
+<html lang="ru" class="lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]>
+<html lang="ru" class="lt-ie9"><![endif]--><!--[if gt IE 8]><!-->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+
+    <title>WhiteAndRed</title>
+</head>
+<body>
+
+<!--<div class="loader">-->
+<!--<div class="loader_inner"></div>-->
+<!--</div>&lt;!&ndash;loader&ndash;&gt;-->
+
+<div class="mainWrappen">
+    <!------------------------------------ HEADER ------------------------------------>
+
+    <header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"><img class="logo-header " src="img/header-logo.png" alt=""></div>
+                <div class="col-sm-8">
+                    <div class="box-contacts">
+                        <p class="box-contacts__adress">Наш адрес</p>
+                        <p>г. Киев, пр. Голосеевский, 108/1</p>
+                        <p>+38 (044) 333-46-92</p>
+                        <p>+38 (096) 777-77-77</p>
+                        <p>hello@white-red.com.ua</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-registred">
+                <!-- Форма для регистрации -->
+                <form role="form" class="form-horizontal">
+                    <!-- Блок для ввода логина -->
+                    <div class="form-group has-feedback">
+
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input type="text" class="form-control" required placeholder="Login"
+                                       name="login" pattern="[A-Za-z]{6,}">
+                            </div>
+                            <span class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <!-- Блок для ввода пароля -->
+                    <div class="form-group has-feedback">
+
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input type="password" class="form-control" id="inputPasswordConfirm" required placeholder="Password"
+                                       name="password" data-minlength="6"  data-match="#inputPassword" data-match-error="Whoops, these don't match">
+                            </div>
+                            <span class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <!-- Блок для ввода email -->
+                    <div class="form-group has-feedback">
+
+                        <div class="col-xs-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input type="email" class="form-control" required placeholder="Email"
+                                       name="email">
+                            </div>
+                            <span class="glyphicon form-control-feedback"></span>
+                        </div>
+                    </div>
+                    <!-- Конец блока для ввода email-->
+                </form>
+
+                <!--Нижняя часть  окна-->
+                <div class="modal-header">
+                    <button id="save" type="button" class="btn btn-danger">Регистрация</button>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="alert alert-success hidden" id="success-alert">
+                    <h2>Успех</h2>
+                    <div>Ваши данные были успешно отправлены.</div>
+                </div>
+
+
+                <!--<form class="form-inline" role="form">-->
+                <!--<div class="form-group fullWeidth">-->
+
+                <!--<input type="email" class="form-control" placeholder="Login">-->
+                <!--</div>-->
+                <!--<div class="form-group fullWeidth">-->
+
+                <!--<input type="password" class="form-control"  placeholder="Password">-->
+                <!--</div>-->
+                <!--<a class="box-forgotPass" href="#">Забыл пароль</a>/<a class="box-checkIn" href="#">Регистрация</a>-->
+                <!--<button type="submit" class="btn btn-default btn-submit btn-block ">Войти</button>-->
+                <!--</form>-->
+
+
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+    <!------------------------------------ MAIN ------------------------------------>
+    <main>
+        <nav class="box-navigation">
+            <ul class="menu">
+                <li><a href="#" class="active">White&amp;Red</a></li>
+                <li><a href="#" class="">Услуги</a></li>
+                <li><a href="#" class="">Работы</a></li>
+                <li><a href="#" class="">Отзывы</a></li>
+                <li><a href="#" class="">Контакты</a></li>
+                <li class="slider"></li>
+            </ul>
+        </nav>
+
+        <!------------------------------------- MAIN_CONTENT ------------------------->
+
+        <div class="box-services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="mainTopic">Услуги</h2>
+                        <p class="text_fullPage">Ежедневно мы помогаем людям в решении разнообразных задач, создавая
+                            идейные и качественные промо сайты с wow-эффектом, посадочные страницы, магазины,
+                            корпоративные сайты, сайты-визитки. Реализация индивидуальных проектов, а также брендинг,
+                            маркетинг и аналитика – это то, что нам нравится и делаем мы это с душой.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="middleTopic">Наша специализация</h3>
+                        <h4 class="addServises_mainTopic">
+                            <strong><a href="#">  Имиджевый корпоративный сайт </a> </strong>
+                        </h4>
+                        <span class="text_specialization">
+                            Сайт для компании, который знакомит с продуктами
+                            и услугами и позволяет создать и поддерживать необходимый имидж для бренда.
+                        </span>
+
+                        <h4 class="addServises_mainTopic">
+                            <strong><a href="#">  Разработка посадочной страницы </a> </strong>
+                        </h4>
+                        <span class="text_specialization">
+                            Сайт для быстрой и эффективной продажи одного или нескольких товаров.
+                        </span>
+
+                        <h4 class="addServises_mainTopic">
+                            <strong><a href="#">  Презентационная сайт-визитка </a> </strong>
+                        </h4>
+                        <span class="text_specialization">
+                            Это небольшой и удобный презентационный сайт для предоставления информации о личности/продукте.
+                        </span>
+
+                        <h4 class="addServises_mainTopic">
+                            <strong><a href="#">  Интернет-магазин </a> </strong>
+                        </h4>
+                        <span class="text_specialization">
+                            Это коммерческий сайт для продажи большого количества товаров или услуг в Интернете.
+                        </span>
+
+                        <h4 class="addServises_mainTopic">
+                            <strong><a href="#">  Промосайт с анимацией </a> </strong>
+                        </h4>
+                        <span class="text_specialization">
+                           Эффектный презентационный сайт с сильным эмоциональным сообщением.
+                        </span>
+
+                        <h4 class="addServises_mainTopic">
+                            <strong><a href="#"> Индивидуальный проект </a> </strong>
+                        </h4>
+                        <span class="text_specialization">
+                        Необычное решение для сложных задач или запуска новых
+                            продуктов с индивидуальным функционалом и дизайнерскими решениями.</span>
+
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="wrappenParent">
+                            <div class="box-parent">
+                                <img class="img_middle" src="img/handshake.png" alt="handshake">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="middleTopic">Дополнительные услуги</h3>
+                        <p class="text_fullPage">Кроме основных услуг, с создания и наполнения сайтов, мы предоставляем
+                            и дополнительные, которые точно пригодятся Вам в процессе развития Вашего бизнеса.</p>
+                        <ul class="addServises">
+                            <li class="addServises_mainTopic"><strong><a href="#">Брендинг</a></strong>
+                                <ul>
+                                    <li>Разработка стратегии</li>
+                                    <li>Создание креативной концепции</li>
+                                    <li>Логотип</li>
+                                    <li>Фирменный стиль</li>
+                                    <li>Брендбук</li>
+                                    <li>Нейминг</li>
+                                </ul>
+                            </li>
+                            <li class="addServises_mainTopic"><strong><a href="#">Интернет маркетинг</a></strong>
+                                <ul>
+                                    <li>SEO (Продвижение в поисковых системах)</li>
+                                    <li>SMM (Реклама в социальных сетях)</li>
+                                    <li>PPC (Контекстная реклама)</li>
+                                    <li>Контент маркетинг</li>
+                                </ul>
+                            </li>
+                            <li class="addServises_mainTopic"><strong><a href="#">Анализ сайта/аудит</a></strong>
+
+                                <ul>
+                                    <li>Создание комплексных решений</li>
+                                    <li>Анализ конкурентной среды и рынка присутствия</li>
+                                    <li>Разработка стратегии продвижения в социальных сетях</li>
+                                </ul>
+
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <!------------------------------------ FOOTER ------------------------------------>
+    <footer>
+        <div class="box-map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div id="googleMap"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+
+                        <img class="img_footer" src="img/logo-gray.png" title="White and Red" alt="White and Red">
+                        <div class="box-contacts__footer">
+                            <p class="box-contacts__adress">Наш адрес</p>
+                            <p>г. Киев, пр. Голосеевский, 108/1</p>
+                            <p>+38 (044) 333-46-92</p>
+                            <p>+38 (096) 777-77-77</p>
+                            <p>hello@white-red.com.ua</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <p class="text_fullPage text_footer"> White&Red Production © 2016 Все права защищены</p>
+        </div>
+
+    </footer>
+
+
+</div>
+<!------------------------------------ SCRIPTS ------------------------------------>
+
+<script src="libs/jquery/dist/jquery.min.js"></script>
+
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-validator/dist/validator.min.js"></script>
+
+
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="libs/gmaps/gmaps.min.js"></script>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
